@@ -1,13 +1,6 @@
 MyMusic Maestro
 ===============
 
-Instructions for marking
-------------------------
-
-Write here any extra instructions or notes for marking.
-
-Put any extra requirements in requirements.txt.
-
 Structure
 ---------
 
