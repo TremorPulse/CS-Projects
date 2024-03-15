@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block page_title %}
+    {% trans "Contact Us" %}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+    <!-- Container for the main content with text-center alignment. -->
+    <div class="container contact-container text-center">
+
+        <!-- Contact details section. -->
+        <div class="contact-details mt-4">
+            <h3>{% trans "Contact Details" %}</h3>
+            <!-- Display phone number and email. -->
+            <p>{% trans "📞 Phone: +1 (555) 123-4567" %}</p>
+            <p>{% trans "✉️ Email: welovemusic@musicmaestro.com" %}</p>
+        </div>
+
+        <!-- Contact form section. -->
+        <form action="{% url 'contact' %}" method="post" class="contact-form">
+            {% csrf_token %}
+
+            <!-- Input field for name. -->
+            <div class="mb-3">
+                <label for="name" class="form-label">{% trans "Your Name" %}</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- Input field for email. -->
+            <div class="mb-3">
+                <label for="email" class="form-label">{% trans "Your Email" %}</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- Text area for message. -->
+            <div class="mb-3">
+                <label for="message" class="form-label">{% trans "Your Message" %}</label>
+                <textarea class="form-control" id="message" name="message" required></textarea>
+            </div>
+
+            <!-- Submit button for the form. -->
+            <button type="submit" class="btn btn-primary">{% trans 'Submit' %}</button>
+        </form>
+    </div>
+{% endblock %}

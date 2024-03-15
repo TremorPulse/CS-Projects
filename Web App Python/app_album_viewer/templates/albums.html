@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block page_title %}
+    {% trans "Albums" %}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+    <!-- Check if there are albums in the list and display albums in a table if the list is not empty. -->
+    {% if album_list %}
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <!-- Table headers for album details. -->
+              <th></th>
+              <th class="text-center">{% trans 'Album Title' %}</th>
+              <th class="text-center">{% trans 'Format Type' %}</th>
+              <th class="text-center">{% trans 'Comments' %}</th>
+              <th class="text-center">{% trans 'Actions' %}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Loop through each album in the list and display album cover as a link to album detail page. -->
+            {% for album in album_list %}
+                <tr>
+                  <td class="text-center align-middle">
+                    <a href="{% url 'album_detail' album.id %}">
+                      <img src="{{ album.cover.url }}" width="55" alt="{{ album.title }}">
+                    </a>
+                  </td>
+                  <!-- Display album details. -->
+                  <td class="align-middle">{{ album.title }}</td>
+                  <td class="align-middle">{{ album.format }}</td>
+                  <td class="align-middle">{{ album.comments.count }}</td>
+                  <!-- Display actions as links to edit and delete album. -->
+                  <td class="align-middle">
+                    <a href="{% url 'album_edit' album.id %}">{% trans 'Edit' %}</a> |
+                    <a href="{% url 'album_delete' album.id %}">{% trans 'Delete' %}</a>
+                  </td>
+                </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <!-- Button to create a new album. -->
+        <div class="center-button">
+            <button onclick="location.href='{% url 'album_new' %}'">{% trans 'Create Album' %}</button>
+        </div>
+    {% else %}
+        <!-- Display message if there are no albums. -->
+        {% trans 'NoAlbums' %}
+    {% endif %}
+{% endblock %}

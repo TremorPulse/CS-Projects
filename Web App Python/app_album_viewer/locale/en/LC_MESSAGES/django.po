@@ -1,0 +1,32 @@
+msgid "CopyrightNotice"
+msgstr "&copy; MyModule Education Ltd, 2023"
+
+msgid "AppName"
+msgstr "MyModule Management"
+
+msgid "AppVersion"
+msgstr "1.0-beta"
+
+msgid "LoginPageTitle"
+msgstr "Login Page"
+
+msgid "FormLogin"
+msgstr "Login"
+
+msgid "NavHome"
+msgstr "Homepage"
+
+msgid "NavModules"
+msgstr "Modules"
+
+msgid "NavContact"
+msgstr "About"
+
+msgid "NavHelp"
+msgstr "Help"
+
+msgid "NavLogout"
+msgstr "Logout"
+
+msgid "NavAccount"
+msgstr "My account"

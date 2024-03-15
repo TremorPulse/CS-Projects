@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block page_title %}
+    {% trans "Album Form" %}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+    <!-- Album form using POST method. -->
+    <form method="post">
+        <!-- Include CSRF token for form security. -->
+        {% csrf_token %}
+
+        <!-- Display form fields as paragraphs. -->
+        {{ form.as_p }}
+
+        <!-- Button to submit the form. -->
+        <button type="submit">{% trans 'Save' %}</button>
+    </form>
+{% endblock %}

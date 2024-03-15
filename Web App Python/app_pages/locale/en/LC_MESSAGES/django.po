@@ -1,0 +1,65 @@
+msgid "welcome_message"
+msgstr "Welcome."
+
+msgid "login_instruction"
+msgstr "Log in to access your account."
+
+msgid "log_in_button"
+msgstr "Log In"
+
+msgid "about_music_store"
+msgstr "About Our Music Store"
+
+msgid "music_store_description_1"
+msgstr "Welcome to our music selling application! We are passionate about connecting music enthusiasts with their favorite tunes and supporting artists from around the world."
+
+msgid "music_store_description_2"
+msgstr "At our music store, we strive to provide an exceptional experience for music lovers and creators alike. Explore our vast collection of high-quality tracks, discover new artists, and support independent musicians."
+
+msgid "key_features"
+msgstr "Key Features"
+
+msgid "explore_music_library"
+msgstr "Explore Our Vast Music Library"
+
+msgid "support_emerging_artists"
+msgstr "Support Emerging Artists"
+
+msgid "high_quality_downloads"
+msgstr "High-Quality Downloads for Audiophiles"
+
+msgid "our_mission"
+msgstr "Our Mission"
+
+msgid "mission_description"
+msgstr "Our mission is to create a platform that empowers artists, fosters a vibrant music community, and brings joy to music enthusiasts worldwide."
+
+msgid "thank_you_message"
+msgstr "Thank you for being a part of our musical journey!"
+
+msgid "welcome_to_account"
+msgstr "Welcome To YourAccount"
+
+msgid "thank_you_for_community"
+msgstr "Thank You For Being A Part OfOurCommunity"
+
+msgid "display_name"
+msgstr "Display Name"
+
+msgid "your_comments"
+msgstr "Your Comments"
+
+msgid "no_comments_yet"
+msgstr "No Comments Yet"
+
+msgid "logout_button"
+msgstr "Logout"
+
+msgid "recommend_album"
+msgstr "Recommend an Album"
+
+msgid "recommend_album_description"
+msgstr "Share your favorite music with a friend by recommending an album!"
+
+msgid "send_email_button"
+msgstr "Send Email"

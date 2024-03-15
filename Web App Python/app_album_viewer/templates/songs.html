@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+    <!-- Display the album cover in the center. -->
+    <div class="text-center">
+        <img src="{{ album.cover.url }}" alt="{{ album.title }}" style="max-width: 100%; height: auto;">
+    </div>
+
+    <!-- Table to display the list of songs in the album. -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <!-- Table headers for song details. -->
+          <th class="text-center">{% trans 'Track Number' %}</th>
+          <th class="text-center">{% trans 'Song Title' %}</th>
+          <th class="text-center">{% trans 'Duration' %}</th>
+          <th class="text-center">{% trans 'Actions' %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Loop through each song in the album and display track number, song title, and duration. -->
+        {% for song in songs %}
+            <tr>
+              <td class="align-middle">{{ forloop.counter }}</td>
+              <td class="align-middle">{{ song.title }}</td>
+              <td class="align-middle">{{ song.running_time }}</td>
+              <!-- Provide an option to remove the song from the album. -->
+              <td class="align-middle">
+                <a href="{% url 'remove_song_from_album' album.id song.id %}">{% trans 'Remove Song' %}</a>
+              </td>
+            </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <!-- Display other songs available for adding to the album. -->
+    <div class="center-content">
+        {% for song in other_songs %}
+            <form method="post" action="{% url 'add_song_to_album' album.id song.id %}">
+                {% csrf_token %}
+                <!-- Dropdown menu to select a song to add to the album. -->
+                <select name="song_id">
+                    <option value="{{ song.id }}">{{ song.title }}</option>
+                </select>
+                <!-- Submit button to add the selected song to the album. -->
+                <input type="submit" value="{% trans 'Add Song' %}">
+            </form>
+        {% endfor %}
+    </div>
+
+    <!-- Button to navigate back to the album detail page. -->
+    <div class="center-button">
+         <button onclick="location.href='{% url 'album_detail' album.id %}'">{% trans 'Back to Album' %}</button>
+    </div>
+{% endblock %}

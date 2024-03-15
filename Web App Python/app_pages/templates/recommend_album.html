@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+  <div style="text-align: center; margin-top: 50px;">
+    <h1>{% trans 'recommend_album' %}</h1>
+    <p>{% trans 'recommend_album_description' %}</p>
+
+    <!-- Form for recommending an album via email. -->
+    <form method="post" style="display: inline-block; text-align: left;">
+        {% csrf_token %}
+        <!-- Render the form fields. -->
+        {{ form.as_p }}
+        <!-- Submit button for sending the recommendation email. -->
+        <button type="submit" style="margin-top: 10px;">{% trans 'send_email_button' %}</button>
+    </form>
+  </div>
+{% endblock %}

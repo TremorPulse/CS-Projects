@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% load static %}
+
+{% block page_title %}
+    {% trans "Album Detail" %}
+{% endblock %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+    <!-- Display album details in a . -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <!-- Table headers for album . -->
+          <th></th>
+          <th class="text-center">{% trans 'Album Title' %}</th>
+          <th class="text-center">{% trans 'Artist' %}</th>
+          <th class="text-center">{% trans 'Format Type' %}</th>
+          <th class="text-center">{% trans 'Release Date' %}</th>
+          <th class="text-center">{% trans 'Price' %}</th>
+          <th class="text-center">{% trans 'Description' %}</th>
+          <th class="text-center">{% trans 'Comments' %}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- Display album details in the table. -->
+          <td class="text-center align-middle"><img src="{{ album.cover.url }}" width="55" alt="{{ album.title }}"></td>
+          <td class="align-middle">{{ album.title }}</td>
+          <td class="align-middle">{{ album.artist }}</td>
+          <td class="align-middle">{{ album.format }}</td>
+          <td class="align-middle">{{ album.release_date }}</td>
+          <td class="align-middle">{{ album.price }}</td>
+          <td class="align-middle">{{ album.description }}</td>
+          <td class="align-middle">{{ album.comments.count }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Display buttons for additional actions. -->
+    <div class="center-button">
+        <!-- Button to view songs associated with the album. -->
+        <button onclick="location.href='{% url 'song_list' album.id %}'">{% trans 'View Songs' %}</button>
+
+        {% if user.is_authenticated %}
+            <button onclick="location.href='{% url 'recommend_album' id=album.id %}'">{% trans 'Recommend Album' %}</button>
+        {% else %}
+        {% endif %}
+    </div>
+{% endblock %}

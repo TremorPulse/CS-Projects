@@ -1,0 +1,16 @@
+
+msgid ""
+msgstr ""
+"Language: en\n"
+
+msgid "AppName"
+msgstr "MyMusicMaestro"
+
+msgid "RecommendEmailSubject"
+msgstr "A friend recommends an album on MyMusic Maestro!"
+
+msgid "RecommendEmailMessage"
+msgstr "Why not take a look at this album I think you'll enjoy? It's called %(album)s."
+
+msgid "RecommendEmailMessageWithUser"
+msgstr "%(user)s thinks you'll enjoy this album. It's called %(album)s."

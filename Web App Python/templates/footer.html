@@ -1,0 +1,48 @@
+{% load static %}
+{% load i18n %}
+
+<!-- Footer section with a white background and padding. -->
+<footer class="text-white py-4">
+    <div class="container">
+        <link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+        <!-- Display the copyright information in the center of the footer. -->
+        <p class="mb-0 text-center">{% trans '© 2023 MyMusicMaestro. All rights reserved.' %}</p>
+
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6 text-md-end">
+                <ul class="list-inline mb-0">
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script to control the visibility of the footer based on scroll position. -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select the footer element.
+            var footer = document.querySelector('footer');
+
+            // Add a scroll event listener to the window.
+            window.addEventListener('scroll', function() {
+                // Calculate how far the user has scrolled from the top.
+                var scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+                // Calculate the height of the entire page.
+                var totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+
+                // Set a threshold (e.g., 40% from the bottom) to show the footer.
+                var threshold = totalHeight * 0.4;
+
+                // Show or hide the footer based on the scroll position.
+                if (scrollPosition > threshold) {
+                    footer.style.display = 'block';
+                } else {
+                    footer.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</footer>

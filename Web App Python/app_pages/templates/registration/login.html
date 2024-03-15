@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+
+{% block content %}
+  <!-- Container with centered text and margin. -->
+  <div style="text-align: center; margin-top: 50px;">
+    <h2>{% trans 'welcome_message' %}</h2>
+    <p>{% trans 'login_instruction' %}</p>
+
+    <!-- Form for user login with inline-block style and left alignment. -->
+    <form method="post" style="display: inline-block; text-align: left;">
+      {% csrf_token %}
+      <!-- Render form fields as paragraphs -->
+      {{ form.as_p }}
+
+      <!-- Submit button for user login with margin-top style. -->
+      <button type="submit" style="margin-top: 10px;">{% trans 'log_in_button' %}</button>
+    </form>
+  </div>
+{% endblock %}
