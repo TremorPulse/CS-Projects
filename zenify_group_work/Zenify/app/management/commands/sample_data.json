@@ -1,0 +1,510 @@
+{
+  "contents": [
+    {
+      "title": "Nature Meditation",
+      "description": "A calming collection of nature scenes for meditation.",
+      "audio_link": "https://soundcloud.com/silvermansound/one-with-everything",
+      "videos": [
+        {
+          "title": "Waterfall Drone View",
+          "video_link": "/static/videos/waterfall-river-water-drone-nature.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Ocean Beach Sunset",
+          "video_link": "/static/videos/ocean_beach_sunset.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Trees in Snow",
+          "video_link": "/static/videos/tree_forest_snow.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Flowing Stream in Mountains",
+          "video_link": "/static/videos/waterfall_stream_river.mp4",
+          "runtime": 35
+        },
+        {
+          "title": "Water Lilies on Lake",
+          "video_link": "/static/videos/flower_water_lil.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Morning Dew on Grass",
+          "video_link": "/static/videos/dewy_grass_morning.mp4",
+          "runtime": 27
+        },
+        {
+          "title": "Beach Waves at Sunset",
+          "video_link": "/static/videos/ocean_wave_dusk.mp4",
+          "runtime": 29
+        },
+        {
+          "title": "Rocky Ocean Waves",
+          "video_link": "/static/videos/ocean_wave_day.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Northern Lights",
+          "video_link": "/static/videos/nothern_lights.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Snowball Flower",
+          "video_link": "/static/videos/cute_flower.mp4",
+          "runtime": 50
+        }
+      ]
+    },
+    {
+      "title": "Guided Meditation for Harmony",
+      "description": "Guided meditation to foster harmony.",
+      "audio_link": "https://soundcloud.com/nithya-shanti/harmony-respect-purity-tranquillity-guided-meditation",
+      "videos": [
+        {
+          "title": "Waterfall Drone View",
+          "video_link": "/static/videos/waterfall-river-water-drone-nature.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Ocean Beach Sunset",
+          "video_link": "/static/videos/ocean_beach_sunset.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Trees in Snow",
+          "video_link": "/static/videos/tree_forest_snow.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Flowing Stream in Mountains",
+          "video_link": "/static/videos/waterfall_stream_river.mp4",
+          "runtime": 35
+        },
+        {
+          "title": "Water Lilies on Lake",
+          "video_link": "/static/videos/flower_water_lil.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Morning Dew on Grass",
+          "video_link": "/static/videos/dewy_grass_morning.mp4",
+          "runtime": 27
+        },
+        {
+          "title": "Beach Waves at Sunset",
+          "video_link": "/static/videos/ocean_wave_dusk.mp4",
+          "runtime": 29
+        },
+        {
+          "title": "Rocky Ocean Waves",
+          "video_link": "/static/videos/ocean_wave_day.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Northern Lights",
+          "video_link": "/static/videos/nothern_lights.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Snowball Flower",
+          "video_link": "/static/videos/cute_flower.mp4",
+          "runtime": 50
+        }
+      ]
+    },
+    {
+      "title": "Jena cho guided meditation",
+      "description": "Guided meditation",
+      "audio_link": "https://soundcloud.com/jeena-cho/3-1-2015-guided-meditation",
+      "videos": [
+        {
+          "title": "Waterfall Drone View",
+          "video_link": "/static/videos/waterfall-river-water-drone-nature.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Ocean Beach Sunset",
+          "video_link": "/static/videos/ocean_beach_sunset.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Trees in Snow",
+          "video_link": "/static/videos/tree_forest_snow.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Flowing Stream in Mountains",
+          "video_link": "/static/videos/waterfall_stream_river.mp4",
+          "runtime": 35
+        },
+        {
+          "title": "Water Lilies on Lake",
+          "video_link": "/static/videos/flower_water_lil.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Morning Dew on Grass",
+          "video_link": "/static/videos/dewy_grass_morning.mp4",
+          "runtime": 27
+        },
+        {
+          "title": "Beach Waves at Sunset",
+          "video_link": "/static/videos/ocean_wave_dusk.mp4",
+          "runtime": 29
+        },
+        {
+          "title": "Rocky Ocean Waves",
+          "video_link": "/static/videos/ocean_wave_day.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Northern Lights",
+          "video_link": "/static/videos/nothern_lights.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Snowball Flower",
+          "video_link": "/static/videos/cute_flower.mp4",
+          "runtime": 50
+        }
+      ]
+    },
+        {
+          "title": "Jena cho guided meditation",
+          "description": "Guided meditation",
+          "audio_link": "https://soundcloud.com/jeena-cho/3-1-2015-guided-meditation",
+          "videos": [
+            {
+              "title": "Waterfall Drone View",
+              "video_link": "/static/videos/waterfall-river-water-drone-nature.mp4",
+              "runtime": 20
+            },
+            {
+              "title": "Ocean Beach Sunset",
+              "video_link": "/static/videos/ocean_beach_sunset.mp4",
+              "runtime": 20
+            },
+            {
+              "title": "Trees in Snow",
+              "video_link": "/static/videos/tree_forest_snow.mp4",
+              "runtime": 30
+            },
+            {
+              "title": "Flowing Stream in Mountains",
+              "video_link": "/static/videos/waterfall_stream_river.mp4",
+              "runtime": 35
+            },
+            {
+              "title": "Water Lilies on Lake",
+              "video_link": "/static/videos/flower_water_lil.mp4",
+              "runtime": 28
+            },
+            {
+              "title": "Morning Dew on Grass",
+              "video_link": "/static/videos/dewy_grass_morning.mp4",
+              "runtime": 27
+            },
+            {
+              "title": "Beach Waves at Sunset",
+              "video_link": "/static/videos/ocean_wave_dusk.mp4",
+              "runtime": 29
+            },
+            {
+              "title": "Rocky Ocean Waves",
+              "video_link": "/static/videos/ocean_wave_day.mp4",
+              "runtime": 28
+            },
+            {
+              "title": "Northern Lights",
+              "video_link": "/static/videos/nothern_lights.mp4",
+              "runtime": 30
+            },
+            {
+              "title": "Snowball Flower",
+              "video_link": "/static/videos/cute_flower.mp4",
+              "runtime": 50
+            }
+          ]
+
+    },
+    {
+      "title": "passionate work flow",
+      "description": "A calming collection of nature scenes for meditation.",
+      "audio_link": "https://soundcloud.com/hyptunes/passionateworkflow",
+      "videos": [
+        {
+          "title": "Waterfall Drone View",
+          "video_link": "/static/videos/waterfall-river-water-drone-nature.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Ocean Beach Sunset",
+          "video_link": "/static/videos/ocean_beach_sunset.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Trees in Snow",
+          "video_link": "/static/videos/tree_forest_snow.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Flowing Stream in Mountains",
+          "video_link": "/static/videos/waterfall_stream_river.mp4",
+          "runtime": 35
+        },
+        {
+          "title": "Water Lilies on Lake",
+          "video_link": "/static/videos/flower_water_lil.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Morning Dew on Grass",
+          "video_link": "/static/videos/dewy_grass_morning.mp4",
+          "runtime": 27
+        },
+        {
+          "title": "Beach Waves at Sunset",
+          "video_link": "/static/videos/ocean_wave_dusk.mp4",
+          "runtime": 29
+        },
+        {
+          "title": "Rocky Ocean Waves",
+          "video_link": "/static/videos/ocean_wave_day.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Northern Lights",
+          "video_link": "/static/videos/nothern_lights.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Snowball Flower",
+          "video_link": "/static/videos/cute_flower.mp4",
+          "runtime": 50
+        }
+      ]
+    },
+    {
+      "title": "Guided Meditation for Harmony",
+      "description": "Guided meditation to foster harmony and respect within.",
+      "audio_link": "https://soundcloud.com/hyptunes/passionateworkflow",
+      "videos": [
+        {
+          "title": "Waterfall Drone View",
+          "video_link": "/static/videos/waterfall-river-water-drone-nature.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Ocean Beach Sunset",
+          "video_link": "/static/videos/ocean_beach_sunset.mp4",
+          "runtime": 20
+        },
+        {
+          "title": "Trees in Snow",
+          "video_link": "/static/videos/tree_forest_snow.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Flowing Stream in Mountains",
+          "video_link": "/static/videos/waterfall_stream_river.mp4",
+          "runtime": 35
+        },
+        {
+          "title": "Water Lilies on Lake",
+          "video_link": "/static/videos/flower_water_lil.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Morning Dew on Grass",
+          "video_link": "/static/videos/dewy_grass_morning.mp4",
+          "runtime": 27
+        },
+        {
+          "title": "Beach Waves at Sunset",
+          "video_link": "/static/videos/ocean_wave_dusk.mp4",
+          "runtime": 29
+        },
+        {
+          "title": "Rocky Ocean Waves",
+          "video_link": "/static/videos/ocean_wave_day.mp4",
+          "runtime": 28
+        },
+        {
+          "title": "Northern Lights",
+          "video_link": "/static/videos/nothern_lights.mp4",
+          "runtime": 30
+        },
+        {
+          "title": "Snowball Flower",
+          "video_link": "/static/videos/cute_flower.mp4",
+          "runtime": 50
+        }
+      ]
+    }
+    
+  ],
+
+  
+
+  "Goals":[
+    {
+      "description" : "Walk 2000 steps",
+      "points" : "20",
+      "steps": "2000"
+    },
+    {
+      "description" : "Walk 5000 steps",
+      "points" : "50",
+      "steps": "5000"
+    },
+    {
+      "description" : "Walk 10000 steps",
+      "points" : "100",
+      "steps": "10000"
+    }
+
+  ],
+  "personality_questions": [
+    {
+      "question": "I put people under pressure.",
+      "category": "Dominance"
+    },
+    {
+      "question": "I have a strong need for power.",
+      "category": "Dominance"
+    },
+    {
+      "question": "I try to outdo others.",
+      "category": "Dominance"
+    },
+    {
+      "question": "I am always on the lookout for ways to make money.",
+      "category": "Dominance"
+    },
+    {
+      "question": "I enjoy being part of a loud crowd.",
+      "category": "Influence"
+    },
+    {
+      "question": "I want strangers to love me.",
+      "category": "Influence"
+    },
+    {
+      "question": "I joke around a lot.",
+      "category": "Influence"
+    },
+    {
+      "question": "I make lots of noise.",
+      "category": "Influence"
+    },
+    {
+      "question": "I hesitate to criticize other people's ideas.",
+      "category": "Steadiness"
+    },
+    {
+      "question": "I value cooperation over competition.",
+      "category": "Steadiness"
+    },
+    {
+      "question": "I just want everyone to be equal.",
+      "category": "Steadiness"
+    },
+    {
+      "question": "I seldom toot my own horn.",
+      "category": "Steadiness"
+    },
+    {
+      "question": "I am emotionally reserved.",
+      "category": "Conscientiousness"
+    },
+    {
+      "question": "I read the fine print.",
+      "category": "Conscientiousness"
+    },
+    {
+      "question": "I love order and regularity.",
+      "category": "Conscientiousness"
+    },
+    {
+      "question": "My first reaction to an idea is to see its flaws.",
+      "category": "Conscientiousness"
+    }
+  ],
+  "companies": [
+    {
+      "name": "company1",
+      "departments": [
+        "department1",
+        "department2"
+      ]
+    }
+  ],
+  "departments": [
+    {
+      "name": "department1"
+    },
+    {
+      "name": "department2"
+    }
+  ],
+  "employees": [
+    {
+      "username": "employeeA",
+      "password": "password",
+      "first_name": "Alice",
+      "last_name": "A",
+      "email": "a@company.com",
+      "department": "department1",
+      "company": "company1",
+      "dob": "2000-01-01",
+      "personality_type": "Dominance"
+    },
+    {
+      "username": "employeeB",
+      "password": "password",
+      "first_name": "Bob",
+      "last_name": "B",
+      "email": "b@company.com",
+      "department": "department1",
+      "company": "company1",
+      "dob": "2000-01-02",
+      "personality_type": "Conscientiousness"
+    }
+  ],
+  "weekly_questions": [
+    {
+      "question": "How are you feeling today?",
+      "options": ["Excellent", "Good", "Fair", "Poor", "Very Poor"]
+    },
+    {
+      "question": "How well did you sleep last night?",
+      "options": ["Excellent", "Good", "Fair", "Poor", "Very Poor"]
+    },
+    {
+      "question": "How would you rate your overall mood this week?",
+      "options": ["Excellent", "Good", "Fair", "Poor", "Very Poor"]
+    },
+    {
+      "question": "How stressed have you felt this week?",
+      "options": [
+        "Not at all",
+        "A little",
+        "Moderately",
+        "Quite a bit",
+        "Extremely"
+      ]
+    },
+    {
+      "question": "How much have you enjoyed your work this week?",
+      "options": [
+        "Not at all",
+        "A little",
+        "Moderately",
+        "Quite a bit",
+        "Extremely"
+      ]
+    }
+  ]
+}

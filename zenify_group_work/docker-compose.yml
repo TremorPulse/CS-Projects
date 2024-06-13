@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  django:
+    build: ./Zenify
+    command: gunicorn Zenify.wsgi:application --bind 0.0.0.0:8000
+    volumes:
+      - ./Zenify:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+
+  celeryworker:
+    build: ./Zenify
+    command: celery -A Zenify worker --loglevel=info
+    volumes:
+      - ./Zenify:/app
+    depends_on:
+      - redis
+      - db
+
+  celerybeat:
+    build: ./Zenify
+    command: celery -A Zenify beat --loglevel=info
+    volumes:
+      - ./Zenify:/app
+    depends_on:
+      - redis
+
+  react:
+    build: ./frontend  # Make sure this is the correct path to your React app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/src
+
+  redis:
+    image: redis:latest
+
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: your_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
