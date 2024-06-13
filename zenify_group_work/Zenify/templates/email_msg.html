@@ -1,0 +1,11 @@
+{% autoescape off %}
+Hi {{ user.username }},
+
+Please enter the following verification code to verify your email and activate your account:
+
+Verification Code: {{ otp }}
+
+If you didn't request this, please ignore this email.
+
+Zenify
+{% endautoescape %}
