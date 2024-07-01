@@ -28,7 +28,7 @@ public class MazeView extends Canvas {
 
         // Calculate maze and canvas dimensions
         int mazeSize = Math.min(maze.getRow(), maze.getCol());
-        int cellSize = 20; // Adjusted size of each cell
+        int cellSize = 20; 
         int canvasSize = mazeSize * cellSize; // Adjusted canvas size based on maze size
 
         setWidth(canvasSize);
@@ -62,21 +62,21 @@ public class MazeView extends Canvas {
                 }
 
                 // Update the current step at a controlled rate
-                if (isMazeSolved && !animationFinished && now - lastUpdate >= UPDATE_INTERVAL * 1_000_000) { // Convert milliseconds to nanoseconds
+                if (isMazeSolved && !animationFinished && now - lastUpdate >= UPDATE_INTERVAL * 1_000_000) {
                     traversalTime = System.currentTimeMillis() - startTime;
                     if (currentStep < steps.size() - 1) {
                         currentStep++;
                         maze.mainMemoryWrites++;
                     } else {
-                        animationFinished = true; // Mark the animation as finished
+                        animationFinished = true;
                     }
                     lastUpdate = now;
                 }
 
                 // Redraw the maze at every frame
-                gc.clearRect(0, 0, getWidth(), getHeight()); // Clear the canvas
+                gc.clearRect(0, 0, getWidth(), getHeight());
                 gc.setFill(Color.BLACK);
-                gc.fillRect(0, 0, getWidth(), getHeight()); // Redraw black background
+                gc.fillRect(0, 0, getWidth(), getHeight()); 
 
                 // Draw the maze centered in the canvas
                 drawMaze();
@@ -88,18 +88,16 @@ public class MazeView extends Canvas {
                 gc.fillText("Maze Generation Algorithm: Iterative Backtracking (DFS)", 15, 30);
                 gc.fillText("Maze Solving Algorithm: Right Hand Rule (Depth-First In-Order Tree Traversal)", 15, 50);
 
-                gc.fillText("Grid Size: " + maze.getRow() + "x" + maze.getCol(), 15, 70); // Separate line for Grid Size
-                gc.fillText("Visual Time: " + (isMazeSolved ? elapsedTime : System.currentTimeMillis() - startTime) + " ms", 15, 90); // Adjusted y coordinate for next line
+                gc.fillText("Grid Size: " + maze.getRow() + "x" + maze.getCol(), 15, 70); 
+                gc.fillText("Visual Time: " + (isMazeSolved ? elapsedTime : System.currentTimeMillis() - startTime) + " ms", 15, 90); 
                 gc.fillText("Traversal Time: " + traversalTime + " ms", 15, 110);
-                gc.fillText("Number of Writes to Main Memory: " + maze.getMainMemoryWrites(), 15, 130); // Adjusted y coordinate for next line
-                gc.fillText("Number of Writes to Auxiliary Memory: " + maze.getAuxMemoryWrites(), 15, 150); // Adjusted y coordinate for next line
+                gc.fillText("Number of Writes to Main Memory: " + maze.getMainMemoryWrites(), 15, 130); 
+                gc.fillText("Number of Writes to Auxiliary Memory: " + maze.getAuxMemoryWrites(), 15, 150); 
 
-                // Time and Space Complexity
-                gc.fillText("Time Complexity: O(C + E)", 15, 170); // Adjusted y coordinate for next line
-                gc.fillText("Space Complexity: O(C)", 15, 190); // Adjusted y coordinate for next line
+                gc.fillText("Time Complexity: O(C + E)", 15, 170); 
+                gc.fillText("Space Complexity: O(C)", 15, 190); 
 
-                // Draw color guide
-                gc.setFill(Color.web("#00FF00")); // Bright green color
+                gc.setFill(Color.web("#00FF00")); // Bright green
                 gc.fillRect(15, 200, 10, 10);
                 gc.setFill(Color.web("#00FF00"));
                 gc.fillText(": Start Point", 30, 210);
@@ -154,7 +152,7 @@ public class MazeView extends Canvas {
         // Draw start and end points
         int[] startCell = maze.getStartCell();
         int[] endCell = maze.getEndCell();
-        gc.setFill(Color.web("#00FF00")); // Bright green color
+        gc.setFill(Color.web("#00FF00")); // Bright green
         gc.fillRect(offsetX + startCell[1] * 8, offsetY + startCell[0] * 8, 8, 8);
         gc.setFill(Color.RED);
         gc.fillRect(offsetX + endCell[1] * 8, offsetY + endCell[0] * 8, 8, 8);
