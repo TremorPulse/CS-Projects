@@ -11,7 +11,7 @@ public class MazeApp extends Application {
     public void start(Stage primaryStage) {
         BorderPane root = new BorderPane();
 
-        Maze maze = new Maze(35, 35); // Create a smaller 31x31 maze
+        Maze maze = new Maze(35, 35); // Create a smaller 35x35 maze
         MazeView mazeView = new MazeView(maze);
         root.setCenter(mazeView);
 
