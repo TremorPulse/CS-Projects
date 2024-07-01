@@ -4,26 +4,26 @@ import java.util.*;
 
 public class Maze {
 
-	private int[][] grid; // The maze grid
-	private int row; // Number of rows in the maze
-	private int col; // Number of columns in the maze
-	private static final int WALL = 1; // Constant representing a wall
-	public static final int PATH = 0; // Constant representing a path
-	private List<int[]> steps; // List to store the steps during maze generation
-	private List<int[]> solutionSteps; // List to store the steps of the solution steps
+	private int[][] grid; 
+	private int row; 
+	private int col; 
+	private static final int WALL = 1; 
+	public static final int PATH = 0; 
+	private List<int[]> steps;
+	private List<int[]> solutionSteps;
 	private boolean solved = false;
 	private Deque<int[]> stack = new ArrayDeque<>(); // Stack for backtracking
 
-	private int[] startCell; // Start point coordinates
-	private int[] endCell; // End point coordinates
+	private int[] startCell;
+	private int[] endCell; 
 
 	// Metrics variables
-	private String algorithmType; // Type of maze generation algorithm used
-	private long visualTime; // Time taken to visually complete the maze generation in milliseconds
-	public int mainMemoryWrites; // Number of writes to main memory
-	private int auxMemoryWrites; // Number of writes to auxiliary memory
+	private String algorithmType; 
+	private long visualTime; 
+	public int mainMemoryWrites; 
+	private int auxMemoryWrites; 
 
-	private int currentStep; // Current step in maze generation
+	private int currentStep;
 
 	public Maze(int row, int col) {
 		this.row = row;
@@ -46,11 +46,11 @@ public class Maze {
 		stack.push(startCell); // Push the start cell onto the stack
 
 		// Initialise metrics
-		algorithmType = "Depth-First Search"; // Default algorithm type
-		visualTime = 0; // Initial visual time
-		mainMemoryWrites = 0; // Initial main memory writes
-		auxMemoryWrites = 0; // Initial auxiliary memory writes
-		currentStep = 0; // Initial step count
+		algorithmType = "Depth-First Search"; 
+		visualTime = 0;
+		mainMemoryWrites = 0; 
+		auxMemoryWrites = 0; 
+		currentStep = 0; 
 
 		solutionSteps = new ArrayList<>();
 	}
@@ -63,7 +63,7 @@ public class Maze {
 			return false; // Maze generation is complete
 		}
 
-		long startTime = System.currentTimeMillis(); // Start time for visual time calculation
+		long startTime = System.currentTimeMillis(); 
 
 		int[] cell = stack.peek(); // Get the current cell from the stack
 		int x = cell[0];
@@ -93,12 +93,12 @@ public class Maze {
 				mainMemoryWrites += 2; // Two writes to main memory (grid[x + dx[i]][y + dy[i]] and grid[nx][ny])
 				auxMemoryWrites++; // One push operation to auxiliary memory (stack.push)
 
-				currentStep++; // Increment step count
+				currentStep++; 
 
-				long endTime = System.currentTimeMillis(); // End time for visual time calculation
-				visualTime = endTime - startTime; // Calculate visual time
+				long endTime = System.currentTimeMillis();
+				visualTime = endTime - startTime; 
 
-				return true; // A step was generated
+				return true; 
 			}
 		}
 
@@ -106,11 +106,11 @@ public class Maze {
 		stack.pop();
 
 		// Update metrics
-		auxMemoryWrites++; // One pop operation from auxiliary memory (stack.pop)
+		auxMemoryWrites++; 
 
-		currentStep++; // Increment step count
+		currentStep++;
 
-		return true; // Maze generation is not yet complete
+		return true; 
 	}
 
 	// Maze-solving method using the right-hand rule
