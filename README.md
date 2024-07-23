@@ -2,17 +2,11 @@
 
 ---
 
-## MyMusic Maestro (Web App Python)
+## ARM_Morse
 
-A music cataloguing application called 'MyMusic Maestro', designed to manage albums, songs, and users.
+ARM assembly on Raspberry Pi to allow Morse Code inputs from a breadboard, translate the inputs into letters, and display them on a segmented display
 
----
-
-## OS Memory Management
-
-This project involved creating a simulation of a non-contiguous segmented memory manager in Java.
-
-[Documentation](https://github.com/TremorPulse/CS-Projects/blob/main/java_OS_mem/COM1032%20_%20Operating%20Systems%20Report.pdf)
+[Documentation](https://github.com/TremorPulse/CS-Projects/blob/main/rasp%20pi%20assembly%20morse%20code/COM1031%20Logic%20_%20Report.pdf)
 
 ---
 
@@ -30,11 +24,17 @@ An application to complement a company's existing database system. The system pr
 
 ---
 
-## ARM Assembly Morse Code Translator
+## Mem_Manager
 
-This project uses ARM assembly to allow Morse Code inputs from a breadboard, translate the inputs into letters, and display them on a segmented display.
+This project involved creating a simulation of a non-contiguous segmented memory manager in Java.
 
-[Documentation](https://github.com/TremorPulse/CS-Projects/blob/main/rasp%20pi%20assembly%20morse%20code/COM1031%20Logic%20_%20Report.pdf)
+[Documentation](https://github.com/TremorPulse/CS-Projects/blob/main/java_OS_mem/COM1032%20_%20Operating%20Systems%20Report.pdf)
+
+---
+
+## MyMusicMaestro 
+
+A music cataloguing application called 'MyMusic Maestro', designed to manage albums, songs, and users.
 
 ---
 
@@ -42,13 +42,9 @@ This project uses ARM assembly to allow Morse Code inputs from a breadboard, tra
 
 The Zenify project is a comprehensive web application designed to address mental health issues in the workplace. It aims to provide a holistic approach to employee well-being with the goal of fostering a healthier corporate environment. Key features include:
 
-- Physical health tracking
-- Gamified challenges
-- Personality trait quizzes
-- Work-life balance promotion
-- Colleague messaging platform
-- Personalized resources and recommendations for mental health and well-being management
-
----
-
-Feel free to explore each project folder for more details on implementation and functionality.
+- Physical health tracking.
+- Gamified challenges.
+- Personality trait quizzes.
+- Work-life balance promotion.
+- Colleague messaging platform.
+- Personalized resources and recommendations for mental health and well-being management.
